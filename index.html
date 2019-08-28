@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Rave Inline API</title>
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+</head>
+<body>
+    <div class="card center-form">
+        <div class="card-header">
+            <h4>Rave Inline API</h4>
+        </div>
+
+        <div class="card-body">
+            <form method="POST">
+                <div class="row">
+                    <div class="col-md-6">
+                        <label>First Name</label>
+                        <input type="text" class="form-control" id="first_name" placeholder="First name">
+                    </div>
+                    <div class="col-md-6">
+                        <label>Last Name</label>
+                        <input type="text" class="form-control" id="last_name" placeholder="Last name">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <label>Email</label>
+                        <input type="email" class="form-control" id="email" placeholder="Email">
+                    </div>
+                </div>
+
+                <div class="row">
+                        <div class="col-md-6">
+                            <label>Amount</label>
+                            <input type="number" class="form-control" id="amount"placeholder="Amount">
+                        </div>
+                        <div class="col-md-6">
+                            <label>Phone Number</label>
+                            <input type="tel"  class="form-control" id="phone"placeholder="Phone Number">
+                        </div>
+                    </div>
+                    <br>
+                    <button class="btn pay-button" type="button" onClick="payWithRave()">Pay Now</button>
+            </form>
+        </div>
+    </div>
+    
+    <script src="https://api.ravepay.co/flwv3-pug/getpaidx/api/flwpbf-inline.js"></script>
+    <script src="assets/js/app.js"></script>
+
+</body>
+</html>
